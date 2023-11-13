@@ -1,0 +1,13 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "db": "mongodb://127.0.0.1:27017/rentalmanagement",
+  "port": "3000",
+  "requiresAuth": true,
+  "name": "house rental and sales platform",
+  "mail": {
+    "host": "smtp server"
+  },
+  "cloud_name": "didr9p1kf",
+  "api_key": "374185457462328",
+  "api_secret": "xsAPP71t9UAPTJBYWLuFC_fDk-g"
+}
