@@ -1,4 +1,4 @@
-const https = require("https");
+const http = require("http");
 const app = require("./app/app");
 const { extendJoi } = require("./startup/validate");
 require("./startup/database");
@@ -10,7 +10,7 @@ const options = {
   key: fs.readFileSync("certificates/key.pem"),
   cert: fs.readFileSync("certificates/cert.pem"),
 };
-const server = https.createServer(options, app);
+const server = http.createServer( app);
 server.on("error", (error) => {
   console.error("Server error:", error);
 });
