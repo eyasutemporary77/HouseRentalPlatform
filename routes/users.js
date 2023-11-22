@@ -8,5 +8,8 @@ const { createUser, getUserInfo } = require("../controllers/userController");
 router.get("/me", authRoute, getUserInfo);
 
 router.post("/", createUser);
+router.get("/test",(req,res)=>{
+    res.json({message:"success"})
+})
 
 module.exports = router;
