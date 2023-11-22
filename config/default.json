@@ -1,6 +1,7 @@
 {
   "jwtPrivateKey": "unsecureKey",
-  "db": "mongodb://127.0.0.1:27017/rentalmanagement",
+  "localdb": "mongodb://127.0.0.1:27017/rentalmanagement",
+  "remotedb":"mongodb+srv://rentalmanagement:wVHJoA7pv6oQmS6D@cluster0.izsnc.mongodb.net/rentalmanagement",
   "port": "3000",
   "requiresAuth": true,
   "name": "house rental and sales platform",
@@ -11,3 +12,5 @@
   "api_key": "374185457462328",
   "api_secret": "xsAPP71t9UAPTJBYWLuFC_fDk-g"
 }
+
+
