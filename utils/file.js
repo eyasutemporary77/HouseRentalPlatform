@@ -3,6 +3,7 @@ async function uploadFile(files) {
   try {
     const cloudinaryPromises = files.map(async (file) => {
       const uploadResult = await cloudinary.uploader.upload(file.path, {
+        resource_type: "auto",
         upload_preset: undefined,
       });
       return uploadResult;
